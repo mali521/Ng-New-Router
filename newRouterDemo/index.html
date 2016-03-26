@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>New Router Demo</title>
+
+    <link rel="stylesheet" href="./bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="bower_components/angular/angular.js"></script>
+    <!--<script src="node_modules/angular-new-router/dist/router.es5.min.js"></script>-->
+
+    <script src="./bower_components/angular-aria/angular-aria.js"></script>
+    <script src="./bower_components/angular-animate/angular-animate.js"></script>
+    <script src="./bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/angularfire/dist/angularfire.js"></script>
+
+    <script src="node_modules/angular-new-router/dist/router.es5.min.js"></script>
+    <script src="app.js"></script>
+    <script src="components/add/add.js"></script>
+    <script src="components/view/view.js"></script>
+    <script src="components/edit/edit.js"></script>
+</head>
+<body ng-app="app" ng-controller="AppController as app">
+<h1>New Router Assignment</h1>
+<div layout="row" style="height: 100%">
+    <div flex="10"></div>
+    <div flex="65">
+        <div layout="column" style="height: 800px;">
+            <div flex="30" ></div>
+            <div flex="80" >
+                <md-button class="md-raised md-primary" ng-click="app.goToAdd()">Add</md-button>
+                <md-button class="md-raised md-warn" ng-click="app.goToView()">View</md-button>
+                <div ng-viewport></div>
+            </div>
+        </div>
+    </div>
+    <div flex="25"></div>
+</div>
+
+</body>
+</html>

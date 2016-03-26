@@ -1,0 +1,39 @@
+<div ng-controller="AddController as add">
+<div  layout="column">
+    <md-content md-theme="docs-dark" layout-padding layout="row" layout-sm="column">
+
+    </md-content>
+    <md-content layout-padding>
+        <form name="userForm">
+            <div layout layout-sm="column">
+            </div>
+
+            <div layout layout-sm="column">
+                <md-input-container flex>
+                    <label>Name</label>
+                    <input ng-model="add.name">
+                </md-input-container>
+            </div>
+            <div layout layout-sm="column">
+                <md-input-container flex>
+                    <label>Email</label>
+                    <input ng-model="add.mail" type="email">
+                </md-input-container>
+            </div>
+            <div layout layout-sm="column">
+                <md-input-container flex>
+                    <label>Mobile #</label>
+                    <input ng-model="add.number" type="number"03>
+                </md-input-container>
+            </div>
+            <div layout layout-sm="row">
+            <md-radio-group ng-model="add.data.group">{{add.data.group}}
+                <md-radio-button value="Male" class="md-primary">Male</md-radio-button>
+                <md-radio-button value="Female"> Female </md-radio-button>
+            </md-radio-group>
+            </div>
+            <md-button class="md-raised md-primary" ng-click="add.adder()" >Save</md-button>
+        </form>
+    </md-content>
+</div>
+</div>

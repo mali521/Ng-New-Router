@@ -1,0 +1,23 @@
+html, body{
+    background-color: aqua;
+}
+h1{
+    color: #660000;
+    text-align: center;
+}
+
+.tableR{
+    border: 1px solid #cc0000;
+    height: 0px;
+    color: red;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 10px 50px;
+    padding:0 15px 0 15px;
+}
+th{
+    padding: 30px;
+
+}

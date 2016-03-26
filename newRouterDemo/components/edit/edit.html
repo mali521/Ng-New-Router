@@ -1,0 +1,28 @@
+<div>
+
+    <md-input-container flex>
+        <label>Name</label>
+        <input ng-model="edit.name">
+    </md-input-container>
+
+    <md-input-container flex>
+        <label>Email</label>
+        <input ng-model="edit.mail" type="email">
+    </md-input-container>
+
+
+    <md-input-container flex>
+        <label>Mobile #</label>
+        <input ng-model="edit.number" type="number"03>
+    </md-input-container>
+
+    <md-radio-group ng-model="edit.data.group">{{add.data.group}}
+        <md-radio-button value="Male" class="md-primary">Male</md-radio-button>
+        <md-radio-button value="Female"> Female </md-radio-button>
+    </md-radio-group>
+
+    <div>
+        <md-button class="md-raised md-primary"  ng-click="edit.update()">Edit</md-button>
+    </div>
+
+</div>

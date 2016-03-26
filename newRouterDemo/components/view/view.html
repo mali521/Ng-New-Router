@@ -1,0 +1,51 @@
+<div ng-controller="ViewController as view">
+
+    <md-content layout layout-align="center center">
+
+        <table class="tableR">
+            <tr>
+                <th>Name</th>
+
+                <th>Email</th>
+
+                <th>Mobile #</th>
+
+                <th> Gender</th>
+
+                <th>Delete</th>
+
+                <th>Update</th>
+
+
+            </tr>
+            <tr ng-repeat="bio in view.abc">
+
+                <td>{{bio.name}}
+                </td>
+
+                <td> {{bio.email}}
+                </td>
+
+                <td>
+                    {{bio.number}}
+                </td>
+
+                <td>
+                    {{bio.gender}}
+                </td>
+
+
+                <td>
+                    <!--<button ng-click="view.abc.$remove(bio)">delete</button>-->
+                    <img src="Delete.jpg" ng-click="view.abc.$remove(bio)" height="28px" width="35px"/>
+                </td>
+
+                <td>
+                    <button ng-click="view.edit(bio.$id)">Update</button>
+                </td>
+            </tr>
+
+        </table>
+
+    </md-content>
+</div>
